@@ -1,0 +1,167 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    max-height: 90%;
+    width: 50%;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    overflow: scroll;
+
+
+    & .up
+    {
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: self-start;
+        line-height: 2;
+        padding: 0px 20px 0 20px;
+
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 2px solid #e0e0e0;
+
+        backdrop-filter: blur(40px);
+        background-color: rgb(190, 190, 190);
+        opacity: 80%;
+
+
+        & .up-header
+        {
+            font-size: larger;
+        }
+        & .up-content
+        {
+            font-weight: 400;
+            font-size: medium;
+        }
+
+    }
+    & .down
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        max-height: 90%;
+
+        gap: 10px;
+
+
+
+
+        & .accordion-item.active .icon
+        {
+            transform: rotate(360deg);
+        }
+        & .accordion-item
+        {
+            line-height: 1.7;
+            width: 100%;
+            gap: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: column;
+
+
+            & .header
+            {
+                width: 100%;
+
+                cursor: pointer;
+
+
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                & .header-text
+                {
+                    font-weight: 400;
+                    width:90%;
+
+                    font-size: medium;
+                    padding: 10px;
+                    & h3
+                    {
+                        width: 100%;
+                    }
+
+                }
+                & .icon-btn
+                {
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+                    width: 10%;
+                    height: 100%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & .icon
+                    {
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 10px;
+
+                    }
+                }
+            }
+
+            & .content
+            {
+                width: 100%;
+
+
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 5px;
+                display: none;
+
+                overflow: scroll;
+
+            }
+
+            &.active .content
+            {
+                max-height: 300px;
+                padding: 20px;
+            }
+        }
+    }
+}
