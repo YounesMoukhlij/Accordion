@@ -4,7 +4,7 @@ You are required to create an accordion component that displays a list of questi
 
 ## Project Overview
 
-![Accordion Component](1.png)
+![Accordion Component](./images/1.png)
 
 Given below is the mockup showing the accordion in its default and expanded states:
 
