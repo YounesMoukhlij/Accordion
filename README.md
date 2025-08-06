@@ -2,6 +2,10 @@
 
 You are required to create an accordion component that displays a list of questions or headings. When a user clicks on a question, its corresponding answer or content section will expand while collapsing any previously opened section. This allows only one section to be open at a time, keeping the UI clean and organized.
 
+## Project Overview
+
+![Accordion Component](1.png)
+
 Given below is the mockup showing the accordion in its default and expanded states:
 
 Accordion
